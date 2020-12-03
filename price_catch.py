@@ -7,7 +7,7 @@ import csv
 while True:
     with open("test.csv","a+",newline='') as csvfile:
         writer = csv.writer(csvfile)
-        #写入多行用writerows
+
 
         last_price = api.get_latest_price(symbol=CoinSymbol.Btcusdt)
         if last_price:
